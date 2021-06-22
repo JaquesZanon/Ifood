@@ -60,7 +60,7 @@
 import pandas as pd
 df_customer_segmentation = pd.read_csv(f'{pasta_raiz}/df_customer_segmentation.csv', sep=';')
 ```
-"""### Pedidos - `df_orders`
+### Pedidos - `df_orders`
 
 | Variável 	| Descrição 	|
 |:-:	|:-	|
@@ -110,9 +110,9 @@ df_customer_segmentation = pd.read_csv(f'{pasta_raiz}/df_customer_segmentation.c
 | valid_order 	| pedido válido (isso é utilizado para identificar pedidos que não são teste de outros datasources ou informações mais antigas) 	|
 | customer_id 	| id do usuário basedo no hash do email do usuário 	|
 
-"""python
+```python
 df_orders = pd.read_csv(f'{pasta_raiz}/df_orders.csv', sep=',')
-"""
+```
 ### Sessões das visitas realizadas - `df_sessions_visits`
 
 
@@ -140,9 +140,9 @@ df_orders = pd.read_csv(f'{pasta_raiz}/df_orders.csv', sep=',')
 | first_order_origin_feature 	| De qual feature veio a compra. Se foi de uma lista, de uma busca, ou outro. 	|
 | media_network 	| De mídia veio a sessão Google Adwords, Facebook Ads, Twitter 	|
 
-'''python
+```python
 df_session_visits = pd.read_csv(f'{pasta_raiz}/df_sessions_visits.csv', sep=',')
-'''
+```
 
 
 
