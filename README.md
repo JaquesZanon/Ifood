@@ -56,4 +56,17 @@
 | preferred_dishes_code 	| Array contém o código das cozinhas favoritas do usuário. 	|
 """
 
+```python
 import pandas as pd
+df_customer_segmentation = pd.read_csv(f'{pasta_raiz}/df_customer_segmentation.csv', sep=';')
+
+from pandas_profiling import ProfileReport
+profile = ProfileReport(df_customer_segmentation, title='Costumer segmentation')
+profile.to_file(f'{pasta_raiz}/df_customer_segmentation.html')
+
+df_customer_segmentation = pd.read_csv(f'{pasta_raiz}/df_customer_segmentation.csv', sep=';')
+df_customer_segmentation.head()
+
+
+```
+
